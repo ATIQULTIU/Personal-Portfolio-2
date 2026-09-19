@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>MD. Atiqul Islam (Atik) — Software Developer</title>
+  <meta name="description" content="Portfolio of MD. Atiqul Islam (Atik), a software developer from Bangladesh building clean, responsive and practical digital experiences with Java, PHP, JavaScript and SQL." />
+  <meta name="author" content="MD. Atiqul Islam (Atik)" />
+  <meta name="theme-color" content="#07080D" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MD. Atiqul Islam (Atik) — Software Developer" />
+  <meta property="og:description" content="Clean, responsive and practical digital experiences. Java · PHP · JavaScript · SQL · AI & Computer Vision." />
+  <meta property="og:url" content="https://md-atiqul-islam.my.canva.site/" />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2307080D'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' fill='%237CF7C7' font-family='monospace' font-weight='bold'%3E%3C/%3E%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Background layers -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="bg-glow bg-glow--a" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="nav" id="nav">
+    <nav class="nav__inner" aria-label="Primary">
+      <a href="#home" class="nav__logo" aria-label="Atik dot dev, back to top">
+        <span class="nav__logo-code">&lt;/&gt;</span> ATIK.DEV
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link is-active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav__link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+        <li class="nav__cta-mobile"><a href="#contact" class="btn btn--primary">Let's Talk ↗</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn--primary nav__cta">Let's Talk ↗</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+
+        <div class="hero__content">
+          <span class="badge reveal"><span class="dot"></span> Available for opportunities</span>
+          <p class="hero__hello reveal">Hello, I'm</p>
+
+          <h1 class="hero__title reveal" id="hero-title">
+            MD. Atiqul<br />
+            <span class="gradient-text">Islam (Atik)</span>
+          </h1>
+
+          <p class="hero__typing reveal" aria-live="polite">
+            <span class="hero__prompt">&gt;</span>
+            <span id="typing" aria-label="Software Developer, Full Stack Learner, Backend Enthusiast, AI and Computer Vision Explorer">Software Developer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero__desc reveal">
+            A passionate software developer focused on building clean, responsive and practical digital experiences with modern web technologies.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">Explore My Work ↗</a>
+            <a href="https://github.com/ATIQULTIU" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- Profile card -->
+        <div class="hero__visual reveal reveal--scale">
+          <span class="float-code float-code--a" aria-hidden="true">const developer = "Atik";</span>
+          <span class="float-code float-code--b" aria-hidden="true">build(); → test(); → ship();</span>
+          <span class="float-code float-code--c" aria-hidden="true">// learn. build. improve.</span>
+
+          <div class="tilt-wrap" id="tiltWrap">
+            <article class="profile-card" id="profileCard" aria-label="Developer profile card">
+              <div class="profile-card__glow" aria-hidden="true"></div>
+
+              <div class="profile-card__bar">
+                <span class="profile-card__title">PROFILE.EXE</span>
+                <span class="status"><span class="dot"></span> ONLINE</span>
+              </div>
+
+              <div class="profile-card__photo">
+                <img src="assets/profile.jpg" alt="Portrait of MD. Atiqul Islam (Atik), wearing glasses and a dark t-shirt" width="1400" height="1050" />
+                <div class="holo" aria-hidden="true"></div>
+                <div class="scanline" aria-hidden="true"></div>
+                <span class="corner corner--tl" aria-hidden="true"></span>
+                <span class="corner corner--tr" aria-hidden="true"></span>
+                <span class="corner corner--bl" aria-hidden="true"></span>
+                <span class="corner corner--br" aria-hidden="true"></span>
+              </div>
+
+              <div class="profile-card__info">
+                <h2 class="profile-card__name">
+                  Atik
+                  <svg class="verified" viewBox="0 0 24 24" width="20" height="20" role="img" aria-label="Verified">
+                    <path d="M12 1.8l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3 1 3-2.6 1.9-1 3-3.2-.1L12 22.2l-2.6-1.9-3.2.1-1-3-2.6-1.9 1-3-1-3 2.6-1.9 1-3 3.2.1z" fill="#719CFF"/>
+                    <path d="M8 12.2l2.7 2.7L16.2 9.4" fill="none" stroke="#07080D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </h2>
+                <p class="profile-card__role">Software Developer</p>
+                <ul class="chips" aria-label="Core technologies">
+                  <li>Java</li><li>PHP</li><li>JavaScript</li><li>SQL</li>
+                </ul>
+              </div>
+
+              <div class="profile-card__foot">
+                <span>Bangladesh</span>
+                <span class="status"><span class="dot"></span> ONLINE</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">01 / About</p>
+          <h2 class="section__title" id="about-title">Turning ideas into<br /><span class="gradient-text">working software.</span></h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>I'm MD. Atiqul Islam (Atik), a software developer who enjoys solving problems, learning new technologies and creating useful applications.</p>
+            <p>My interests sit across the whole stack: backend development, full-stack development, software testing, REST APIs, databases and AI-powered applications. I like understanding how a system works from the request to the query, and making it reliable along the way.</p>
+            <ul class="interest-list" aria-label="Areas of interest">
+              <li>Backend development</li>
+              <li>Full-stack development</li>
+              <li>Software testing</li>
+              <li>REST APIs</li>
+              <li>Databases</li>
+              <li>AI-powered applications</li>
+            </ul>
+          </div>
+
+          <!-- Terminal -->
+          <div class="terminal reveal reveal--scale" id="terminal" role="img" aria-label="Terminal window showing: whoami, MD. Atiqul Islam (Atik). focus, Software Development, Web, APIs, QA. mission, Learn. Build. Improve. Repeat.">
+            <div class="terminal__bar">
+              <span class="terminal__dots"><i></i><i></i><i></i></span>
+              <span class="terminal__title">atik@developer:~</span>
+            </div>
+            <div class="terminal__body" aria-hidden="true">
+              <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+              <p class="t-out t-white" data-line>MD. Atiqul Islam (Atik)</p>
+              <p><span class="t-prompt">$</span> <span class="t-cmd">focus</span></p>
+              <p class="t-out t-blue" data-line>Software Development • Web • APIs • QA</p>
+              <p><span class="t-prompt">$</span> <span class="t-cmd">mission</span></p>
+              <p class="t-out t-purple" data-line>Learn. Build. Improve. Repeat.</p>
+              <p><span class="t-prompt">$</span> <span class="caret"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-3">
+          <article class="glass-card feature reveal">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3a4 4 0 0 0-4 4v.5A3.5 3.5 0 0 0 4 11a3.5 3.5 0 0 0 1.5 2.9V15a4 4 0 0 0 4 4h.5V3z"/><path d="M14.5 3a4 4 0 0 1 4 4v.5A3.5 3.5 0 0 1 20 11a3.5 3.5 0 0 1-1.5 2.9V15a4 4 0 0 1-4 4H14V3z"/></svg>
+            </div>
+            <h3>Problem Solver</h3>
+            <p>Analytical thinking with a practical approach to software problems.</p>
+          </article>
+          <article class="glass-card feature reveal" style="--delay:.1s">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+            </div>
+            <h3>Fast Learner</h3>
+            <p>Comfortable exploring new tools, frameworks and development workflows.</p>
+          </article>
+          <article class="glass-card feature reveal" style="--delay:.2s">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16.5 14.2A5 5 0 0 1 21 19"/></svg>
+            </div>
+            <h3>Team Mindset</h3>
+            <p>Focused on communication, collaboration and reliable delivery.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">02 / Skills</p>
+          <h2 class="section__title" id="skills-title">My<br /><span class="gradient-text">technical toolkit.</span></h2>
+        </header>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Progress values are visual portfolio indicators, not certified measurements. -->
+          <article class="skill glass-card reveal" data-level="88">
+            <div class="skill__top"><h3>Java</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Backend</p>
+            <div class="bar" role="progressbar" aria-label="Java" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88"><span class="bar__fill"></span></div>
+          </article>
+          <article class="skill glass-card reveal" data-level="85" style="--delay:.05s">
+            <div class="skill__top"><h3>PHP</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Backend</p>
+            <div class="bar" role="progressbar" aria-label="PHP" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span class="bar__fill"></span></div>
+          </article>
+          <article class="skill glass-card reveal" data-level="84" style="--delay:.1s">
+            <div class="skill__top"><h3>JavaScript</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Frontend</p>
+            <div class="bar" role="progressbar" aria-label="JavaScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="84"><span class="bar__fill"></span></div>
+          </article>
+          <article class="skill glass-card reveal" data-level="92" style="--delay:.15s">
+            <div class="skill__top"><h3>HTML / CSS</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Frontend</p>
+            <div class="bar" role="progressbar" aria-label="HTML and CSS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92"><span class="bar__fill"></span></div>
+          </article>
+          <article class="skill glass-card reveal" data-level="86">
+            <div class="skill__top"><h3>MySQL / SQL</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Database</p>
+            <div class="bar" role="progressbar" aria-label="MySQL and SQL" aria-valuemin="0" aria-valuemax="100" aria-valuenow="86"><span class="bar__fill"></span></div>
+          </article>
+          <article class="skill glass-card reveal" data-level="82" style="--delay:.05s">
+            <div class="skill__top"><h3>REST APIs</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Backend</p>
+            <div class="bar" role="progressbar" aria-label="REST APIs" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82"><span class="bar__fill"></span></div>
+          </article>
+          <article class="skill glass-card reveal" data-level="76" style="--delay:.1s">
+            <div class="skill__top"><h3>Python</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Backend / AI</p>
+            <div class="bar" role="progressbar" aria-label="Python" aria-valuemin="0" aria-valuemax="100" aria-valuenow="76"><span class="bar__fill"></span></div>
+          </article>
+          <article class="skill glass-card reveal" data-level="80" style="--delay:.15s">
+            <div class="skill__top"><h3>Testing</h3><span class="skill__pct">0%</span></div>
+            <p class="skill__cat">Quality Assurance</p>
+            <div class="bar" role="progressbar" aria-label="Software testing" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><span class="bar__fill"></span></div>
+          </article>
+        </div>
+        <p class="note reveal">Percentages are visual indicators for this portfolio, not certified measurements.</p>
+
+        <!-- Categories -->
+        <div class="categories">
+          <article class="cat glass-card reveal">
+            <h3 class="cat__title">Frontend</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+          <article class="cat glass-card reveal" style="--delay:.05s">
+            <h3 class="cat__title">Backend</h3>
+            <ul class="tags"><li>Java</li><li>PHP</li><li>REST APIs</li><li>Python</li></ul>
+          </article>
+          <article class="cat glass-card reveal" style="--delay:.1s">
+            <h3 class="cat__title">Database</h3>
+            <ul class="tags"><li>MySQL</li><li>SQL</li></ul>
+          </article>
+          <article class="cat glass-card reveal" style="--delay:.15s">
+            <h3 class="cat__title">AI / Computer Vision</h3>
+            <ul class="tags"><li>Python</li><li>OpenCV</li><li>TensorFlow</li></ul>
+          </article>
+          <article class="cat cat--wide glass-card reveal" style="--delay:.2s">
+            <h3 class="cat__title">Testing</h3>
+            <ul class="tags"><li>Manual Testing</li><li>Functional Testing</li><li>Regression Testing</li><li>Smoke Testing</li><li>Sanity Testing</li><li>API Testing</li></ul>
+          </article>
+          <article class="cat cat--wide glass-card reveal" style="--delay:.25s">
+            <h3 class="cat__title">Tools</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">03 / Projects</p>
+          <h2 class="section__title" id="projects-title">Selected<br /><span class="gradient-text">creative builds.</span></h2>
+        </header>
+
+        <div class="projects">
+          <a class="project glass-card reveal" href="https://github.com/ATIQULTIU" target="_blank" rel="noopener noreferrer" aria-label="Assignment and Submission Management System, view on GitHub">
+            <span class="project__num" aria-hidden="true">01</span>
+            <div class="project__body">
+              <p class="project__cat">Web Application</p>
+              <h3 class="project__title">Assignment &amp; Submission Management System</h3>
+              <p class="project__desc">A full-stack platform concept for Admin, Teacher and Student workflows, assignment submission and management.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Backend</li><li>Database</li></ul>
+            </div>
+            <span class="project__arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="project glass-card reveal" href="https://github.com/ATIQULTIU" target="_blank" rel="noopener noreferrer" style="--delay:.08s" aria-label="Face Emotion Detection, view on GitHub">
+            <span class="project__num" aria-hidden="true">02</span>
+            <div class="project__body">
+              <p class="project__cat">AI / Computer Vision</p>
+              <h3 class="project__title">Face Emotion Detection</h3>
+              <p class="project__desc">A real-time facial-expression detection project using Python, OpenCV and TensorFlow concepts.</p>
+              <ul class="tags"><li>Python</li><li>OpenCV</li><li>TensorFlow</li><li>AI</li></ul>
+            </div>
+            <span class="project__arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="project glass-card reveal" href="https://github.com/ATIQULTIU" target="_blank" rel="noopener noreferrer" style="--delay:.16s" aria-label="The Living Mannequin, Puppet on Strings, view on GitHub">
+            <span class="project__num" aria-hidden="true">03</span>
+            <div class="project__body">
+              <p class="project__cat">Creative UI</p>
+              <h3 class="project__title">The Living Mannequin — Puppet on Strings</h3>
+              <p class="project__desc">An animated multi-page character showcase built with plain HTML, CSS and vanilla JavaScript.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Animation</li></ul>
+            </div>
+            <span class="project__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">04 / Contact</p>
+          <h2 class="section__title" id="contact-title">Let's build something<br /><span class="gradient-text">meaningful.</span></h2>
+          <p class="section__sub">Have an opportunity, project idea or collaboration in mind?</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__buttons">
+              <a href="mailto:atik.cmttiu1001@gmail.com" class="btn btn--primary">Send Email ↗</a>
+              <a href="https://github.com/ATIQULTIU" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://md-atiqul-islam.my.canva.site/" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+            </div>
+
+            <dl class="contact__list">
+              <div><dt>Email</dt><dd><a href="mailto:atik.cmttiu1001@gmail.com">atik.cmttiu1001@gmail.com</a></dd></div>
+              <div><dt>GitHub</dt><dd><a href="https://github.com/ATIQULTIU" target="_blank" rel="noopener noreferrer">github.com/ATIQULTIU</a></dd></div>
+              <div><dt>Portfolio</dt><dd><a href="https://md-atiqul-islam.my.canva.site/" target="_blank" rel="noopener noreferrer">md-atiqul-islam.my.canva.site</a></dd></div>
+              <div><dt>Location</dt><dd>Bangladesh</dd></div>
+            </dl>
+          </div>
+
+          <form class="form glass-card reveal" id="contactForm" novalidate style="--delay:.1s">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+              <small class="field__error" id="name-error" role="alert"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <small class="field__error" id="email-error" role="alert"></small>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+              <small class="field__error" id="subject-error" role="alert"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <small class="field__error" id="message-error" role="alert"></small>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">SEND MESSAGE ↗</button>
+            <div class="form__status" id="formStatus" role="status" aria-live="polite" hidden>
+              <p>Message prepared successfully. Please use the email button to contact Atik.</p>
+              <a href="#" id="mailtoFallback" class="btn btn--ghost">Open in email app ↗</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__copy">© 2026 MD. Atiqul Islam (Atik)</p>
+        <p class="footer__note">Designed &amp; built with curiosity <span class="heart" aria-label="love">♥</span></p>
+      </div>
+      <nav aria-label="Footer links">
+        <ul class="footer__links">
+          <li><a href="https://github.com/ATIQULTIU" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://md-atiqul-islam.my.canva.site/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+          <li><a href="mailto:atik.cmttiu1001@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
